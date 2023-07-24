@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Dharma Raj Poudel">
+    <title>Registration</title>
+</head>
+<body>
+    <div>
+        <form method="POST" action="#" name="register" id="register">
+            <fieldset>
+                <legend>User Register</legend>
+                <label>Username</label><br>
+                <input type="text" name="username"  required>
+                <br>
+                <label>Password</label><br>
+                <input type="password" name="password"  required>
+                <br>
+                <label>Email</label><br>
+                <input type="email" name="email"  required>
+                <br>
+                <label>Gender</label><br>
+                <input type="radio" name="gender" value="male" checked>Male
+                <input type="radio" name="gender" value="female">Female
+                <input type="radio" name="gender" value="other">Others
+                <br>
+
+                <label>Date of Birth</label><br>
+                <input type="date" name="date">
+                <br>
+                <label>Image</label><br>
+                <input type="file" name="photo" >
+                <br>
+                <label>Your City</label><br>
+                <select name="city" size="1">
+                    <option value="">---Please Choose---</option>
+                    <option value="ktm">Kathmandu</option>
+                    <option value="lpt" selected>Lalitpur</option>
+                    <option value="bkt">Bhaktapur</option>
+                    <option value="oth">Others</option>
+                </select>
+                <br>
+                <label>Your Message for us</label><br>
+                <textarea rows="10" cols="50" name="message"></textarea>
+                <br>
+                <input type="checkbox" name="iagree" id="iagree" required>
+                <br>
+                <input type="reset" name="reset" id="reset" value="Clear">
+                <input type="submit" name="submit" id="sumbit" value="Register">
+             </fieldset>
+             <p>Already have an account <a href="login.html">Login</a>
+            </p>
+        </form>
+    </div>
+</body>
+</html>
